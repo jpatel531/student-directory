@@ -11,4 +11,6 @@ puts "Terminator"
 puts "Freddy Kruger"
 puts "The Joker"
 
-puts "Overall, we have 10 great students"
+student_count = 10
+
+puts "Overall, we have #{student_count} great students"
