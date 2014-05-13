@@ -10,3 +10,5 @@ puts "The Alien"
 puts "Terminator"
 puts "Freddy Kruger"
 puts "The Joker"
+
+puts "Overall, we have 10 great students"
