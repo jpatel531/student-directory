@@ -1,16 +1,16 @@
 puts "The students of my cohort at Makers Academy"
 puts "----------"
-puts "Jamie Patel"
-puts "Faezrah Rizalman"
-puts "Dr. Hannibal Lecter"
-puts "Darth Vader"
-puts "Nurse Ratched"
-puts "Michael Corleone"
-puts "The Alien"
-puts "Terminator"
-puts "Freddy Kruger"
-puts "The Joker"
+students = ["Jamie Patel",
+"Faezrah Rizalman",
+"Dr. Hannibal Lecter",
+"Darth Vader",
+"Nurse Ratched",
+"Michael Corleone",
+"The Alien",
+"Terminator",
+"Freddy Kruger",
+"The Joker"]
 
-student_count = 10
+students.each { |student| puts student}
 
-puts "Overall, we have #{student_count} great students"
+puts "Overall, we have #{students.length} great students"
