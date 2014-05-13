@@ -13,7 +13,6 @@ def print_footer(names)
 end
 
 
-
 def input_students
 	puts "Please enter the names of the students"
 	puts "To finish, just hit return twice"
@@ -67,7 +66,6 @@ def process(selection)
 end
 
 def interactive_menu
-	@students = []
 	loop do
 	print_menu
 	selection = gets.chomp
