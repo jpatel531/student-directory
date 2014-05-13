@@ -8,8 +8,8 @@ def print_students_list
 @students.each { |student| puts "#{student[:name]} (#{student[:cohort]} cohort)"}
 end
 
-def print_footer(names)
-	puts "Overall we have #{names.length} great students"
+def print_footer
+	puts "Overall we have #{@students.length} great students"
 end
 
 
@@ -37,7 +37,7 @@ end
 def show_students
 	print_header
 	print_students_list
-	print_footer(@students)
+	print_footer
 end
 
 def save_students
