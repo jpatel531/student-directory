@@ -15,14 +15,22 @@ def print_footer
 	puts "Overall we have #{@students.length} great students"
 end
 
+def done_message 
+	message = "Now we have #{@students.length} student"
+	if @students.length == 1
+		puts message
+	else
+		puts message + "s"
+	end
+end
+
 def input_students
 	puts "Please enter the names of the students"
 	puts "To finish, just hit return twice"
-	@students = []
 	name = STDIN.gets.chomp
 	while !name.empty? do
 		add_student(name, :May)
-		puts "Now we have #{@students.length} students"
+		done_message
 		name = STDIN.gets.chomp
 	end
 	return @students
@@ -68,7 +76,8 @@ def load_students(filename="students.csv")
 end
 
 def try_load_students
-	filename = ARGV.first
+	puts "File name?"
+	filename = STDIN.gets.chomp
 	return if filename.nil?
 	if File.exists?(filename)
 		load_students(filename)
